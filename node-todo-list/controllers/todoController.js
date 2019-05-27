@@ -1,5 +1,4 @@
 var bodyParser = require('body-parser')
-var mongoose = require('mongoose')
 var mysql = require('mysql')
 var config = require('./config')
 

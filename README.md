@@ -1,1 +1,3 @@
-1. Node TODO App with MySQL DB Integration
+-> Node.js TODO App with MySQL DB Integration
+
+-> React.js TODO App 

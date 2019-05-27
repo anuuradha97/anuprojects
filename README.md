@@ -1,4 +1,4 @@
-React todo list
+Node.js todo list :-
 A todo list app creaed with Node.js 
 
 Getting Started

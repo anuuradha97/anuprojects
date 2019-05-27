@@ -1,7 +1,9 @@
 Node.js todo list :-
+
 A todo list app creaed with Node.js 
 
-Getting Started
+Getting Started :-
+
 To get started, first install all the necessary dependencies.
 
 > npm install express ejs body-parser mysql --save

@@ -1,6 +1,6 @@
 Node.js todo list :-
 
-A todo list app creaed with Node.js
+A todo list app created with Node.js
 
 Getting Started :-
 

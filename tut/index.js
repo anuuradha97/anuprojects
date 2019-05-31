@@ -21,5 +21,5 @@ app.get('/contact', function(req, res) {
 })
 
 app.listen(8085,function() {
-	console.log('Started')
+	console.log('Started port 8085')
 })

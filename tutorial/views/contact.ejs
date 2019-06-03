@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/assets/styles.css" >
+    <link rel="stylesheet" href="/assets/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/assets/bootstrap.min.css" rel="stylesheet" >
+    <script src="/assets/jquery.min.js"></script>
+    <script src="/assets/scripts.js"></script>
+    <script src="/assets/contact_details.js"></script>
+</head>
+<body>
+    <% include partials/socialmedia.ejs %>
+    <% include partials/nav.ejs %><br/>
+	<div class="container">
+        <h1><u>Contact Us!</u></h1>
+        <form id="contact-form" method="POST" action="/contact" >
+            <label class="info" for="name">Name</label><br><br>
+            <input type="text" required placeholder="Write your name here.." name="name" ><br><br>
+            <label class="info" for="email">Email</label><br><br>
+            <input type="email" required placeholder="Let us know how to contact you back.." name="email" ><br><br>
+            <label class="info" for="message">Message</label><br><br>
+            <input type="text" placeholder="What would you like to tell us..?" required name="message" ><br><br>
+            <center><button class="btn" type="submit">Submit</button></center>
+        </form>
+    </div>
+	<% include partials/footer.ejs %>
+</body>
+</html>

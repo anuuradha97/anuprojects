@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thanks for contacting!</title>
+    <link rel="stylesheet" href="/assets/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="/assets/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        p{
+            font-family: monospace;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <% include partials/socialmedia.ejs %>
+    <% include partials/nav.ejs %>
+    <div class="container">
+            <h1 style="color: black">Contact Us!</h1>
+            <p>Thanks <strong><%= contact_det[0].name %></strong> for contacting us...</p><br/> 
+            <p>We will reply you at <strong><%= contact_det[0].email %></strong></p> 
+    </div>
+	
+	<% include partials/footer.ejs %>
+</body>
+</html>

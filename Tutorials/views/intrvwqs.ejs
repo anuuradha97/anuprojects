@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interview Questions</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" >
+    <link rel="stylesheet" href="/assets/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/scripts.js"></script>
+    <!-- <script src="/assets/js/contact_details.js"></script> -->
+</head>
+<body>
+    <!-- <% include partials/socialmedia.ejs %> -->
+    <% include partials/nav.ejs %><br/>
+    <div class = 'container'>
+        <% for(var i = 0; i<dataa.length; i++){ %>
+        <div class = "card-panel valign-wrapper card-panel hoverable">
+            <p class = "valign">
+                <ul style="list-style-type:none;">
+                     <li><p><b>Ques.<%= (i +1) %>.&nbsp<%= dataa[i].iq_ques %></b></p>
+                        <p><b>Ans.&nbsp</b><%-(dataa[i].iq_ans)  %></p><br/> 
+                    </li>
+                </ul>
+            </p>
+        </div>
+        <% } %>
+
+      
+        <!-- Redirect to same page
+        <div class = 'container'>
+                <% for(var i = 0; i<dataa.length; i++){ %>
+                <div class = "card-panel valign-wrapper card-panel hoverable">
+                    <p class = "valign">
+                        <ul style="list-style-type:none;">
+                             <li><p><b>Ques.<%= (i +1) %>.&nbsp<%= dataa[i].iq_ques %></b></p>
+                                <button onclick="viewAnswer()">View Answer</button>
+                                <p id ='viewAns' style="display: none"><b>Ans.&nbsp</b><%= dataa[i].iq_ans  %></p><br/> 
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                <% } %>
+    </div>
+    <script>
+        function viewAnswer(){
+            document.getElementById('viewAns').style.display='block';
+
+        }
+    </script> -->
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Insert (Interview Questions)</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="/assets/css/materialize.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Insert (Interview Questions)</h1>
+        <%= typeof msg != 'undefined' ? msg : '' %>
+        <form id="ins_upd_kaizala-form" method="POST" action="/intrvwqs_ins_upd" enctype="multipart/form-data">
+            <input type="text" required placeholder="Enter Question" name="Question" ><br><br>
+            <input type="text" required placeholder="Enter Answer" name="Answer" ><br><br>
+            <div class="file-field input-field">
+              <div class="btn grey">
+                <span>Browse Files</span>
+                <input name="file" type="file">
+              </div>
+              <div class="file-path-wrapper">
+                <input class="file-path validate" type="text">
+              </div>
+            </div>
+            <center><button id="insert_kaiz" class="btn" type="submit">Insert</button></center>
+          </form>
+    </div>
+
+<script src="/assets/js/jquery.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="/assets/js/materialize.min.js"></script>    
+</body>
+</html>

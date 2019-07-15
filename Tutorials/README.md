@@ -10,4 +10,4 @@ Start the development server
 
 (or whatever name you give to your main javascript file)
 
-To view your project, go to: http://localhost:8082/
+To view your project, go to: http://localhost:8084/

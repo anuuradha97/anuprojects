@@ -3,11 +3,11 @@ Getting Started :-
 
 To get started, first install all the necessary dependencies.
 
-^npm install express ejs body-parser mysql --save
+^ npm install express ejs body-parser mysql --save
 
 Start the development server
 
-^node index
+^ node index
 
 (or whatever name you give to your main javascript file)
 
